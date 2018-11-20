@@ -1,7 +1,60 @@
 img{
-  width: 100%;
+  width: 50px 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: 40%;
 }
+
+.shadow-box {
+  box-shadow: 8px 8px 4px grey;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.shadow-box:hover {
+  box-shadow: 12px 12px 4px grey;
+}
+
+.shadow-text {
+  text-shadow: 2px 2px 3px grey;
+}
+
 body{
   background-color: #f2f5ff;
   font-family: Helvetica;
+
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+     -o-animation: fadein 2s; /* Opera < 12.1 */
+        animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
